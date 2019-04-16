@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/logo.svg'
-import { FaCartArrowDown, FaSkype } from 'react-icons/fa'
+import { FaCartArrowDown } from 'react-icons/fa'
 
 export default class Navbar extends Component {
     state = {

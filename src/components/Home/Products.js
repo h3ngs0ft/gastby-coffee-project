@@ -24,23 +24,23 @@ const getProducts = graphql`
 `
 
 export default function Products() {
-  return (
+return (
     <StaticQuery
-      query={getProducts}
-      render={data => {
+    query={getProducts}
+        render={data => {
         return (
-          <section className="py-5">
+            <section className="py-5">
             <div className="container">
-              <Title title="our products" />
-              <div className="row">
+                <Title title="our products" />
+                <div className="row">
                 {data.products.edges.map(({ node: product }) => {
-                  return <Product key={product.id} product={product} />
+                return <Product key={product.id} product={product} />
                 })}
-              </div>
             </div>
-          </section>
+            </div>
+        </section>
         )
-      }}
+        }}
     />
-  )
+)
 }
